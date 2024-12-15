@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.container-left {
+  width: 50%;
+  background-image: url(./assets/img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.container-right {
+  width: 50%;
+  background-color: #132540;
+  align-items: center;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.logo-home {
+  width: 90px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.converter {
+  width: 375px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 44px 24px 23px;
+
+}
+
+label {
+  color: #777777;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+select, input {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  cursor: pointer;
+}
+
+.convert-button {
+  background: #51b6b6;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  height: 48px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+section {
+  border: 1px solid #bbbbbb;
+  border-radius: 20px;
+  margin-top: 36px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-img {
+  margin: 15px 0;
+}
+
+.currency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.currency {
+  color: #777777;
+  font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+  color: #555555;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-left, .container-right {
+    width: 100%; /* Largura total */
+    height: auto;
+    position: relative; 
+    margin: 0; /* Zera margens desnecessárias */
+}
+
+  .container-left {
+    background-image: url(./assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  .container-right {
+    height: auto;
+  }
+
+  .logo-home {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .converter {
+    width: 315px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  select, input {
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .convert-button {
+    font-size: 14px;
+  }
+
+  .section {
+    margin-top: 28px;
+  }
+
+  .currency-value-to-convert, .currency-value {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-left, .container-right {
+    width: 100%; /* Largura total */
+    height: auto;
+    position: relative; 
+    margin: 0; /* Zera margens desnecessárias */
+}
+
+  .container-left {
+    background-image: url(./assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  .container-right {
+    height: 990px;
+  }
+
+  .logo-home {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .converter {
+    width: 290px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  select, input {
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .convert-button {
+    font-size: 14px;
+  }
+
+  .section {
+    margin-top: 28px;
+  }
+
+  .currency-value-to-convert, .currency-value {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 100%;
+    height: 950px;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+}
